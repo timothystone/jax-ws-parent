@@ -5,25 +5,15 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.anothercaffeinatedday</groupId>
-    <artifactId>jax-parent</artifactId>
+    <artifactId>jax-ws-parent</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <!-- The Basics -->
-    <dependencies></dependencies>
-    <dependencyManagement></dependencyManagement>
-    <modules></modules>
-    <properties></properties>
-
-    <!-- Build Settings -->
-    <build></build>
-    <reporting></reporting>
-
-    <!-- More Project Information -->
     <name>ACD JAX WS Parent</name>
     <description>A Parent POM for SOAP with JAX WS and Apache CXF</description>
-    <url></url>
+    <url>https://github.com/timothystone/jax-ws-parent</url>
     <inceptionYear>2020</inceptionYear>
+
     <licenses>
         <license>
             <name>MIT</name>
@@ -36,15 +26,17 @@
             </comments>
         </license>
     </licenses>
+
     <organization>
         <url>https://www.anothercaffeinatedday.com/</url>
         <name>Another Caffeinated Day</name>
     </organization>
+
     <developers>
         <developer>
             <id>timothystone</id>
             <name>Timothy Stone</name>
-            <email></email>
+            <email>NOEMAIL</email>
             <url>https://github.com/timothystone</url>
             <organization>Another Caffeinated Day</organization>
             <organizationUrl>https://www.anothercaffeinatedday.com</organizationUrl>
@@ -52,30 +44,69 @@
                 <role>developer</role>
             </roles>
             <timezone>America/New_York</timezone>
+            <properties>
+                <email.encoding>rot13</email.encoding>
+            </properties>
         </developer>
     </developers>
-    <contributors>
-        <contributor>
-            <name>Timothy Stone</name>
-            <email>devnull@petmystone.com</email>
-            <url>https://github.com/timothystone</url>
-            <organization>Another Caffeinated Day</organization>
-            <organizationUrl>https://www.anothercaffeinatedday.com</organizationUrl>
-            <roles>
-                <role>developer</role>
-            </roles>
-            <timezone>America/New_York</timezone>
-        </contributor>
-    </contributors>
 
-    <!-- Environment Settings -->
-    <issueManagement></issueManagement>
-    <ciManagement></ciManagement>
-    <mailingLists></mailingLists>
-    <scm></scm>
-    <prerequisites></prerequisites>
-    <repositories></repositories>
-    <pluginRepositories></pluginRepositories>
-    <distributionManagement></distributionManagement>
-    <profiles></profiles>
+    <!-- <mailingLists></mailingLists>
+    -->
+    <scm>
+        <connection>scm:git:https://github.com/timothystone/jax-ws-parent</connection>
+        <developerConnection>scm:git:git@github.com:timothystone/jax-ws-parent</developerConnection>
+        <tag>HEAD</tag>
+        <url>https://github.com/timothystone/jax-ws-parent</url>
+    </scm>
+
+    <issueManagement>
+        <system>GitHub</system>
+        <url>https://github.com/timothystone/jax-ws-parent/issues</url>
+    </issueManagement>
+
+    <!-- <ciManagement></ciManagement>
+    -->
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub timothystone Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/timothystone/jax-ws-parent</url>
+        </repository>
+    </distributionManagement>
+
+    <!-- <properties></properties>
+    -->
+
+    <!-- <dependencyManagement></dependencyManagement>
+    -->
+
+    <!-- <dependencies></dependencies>
+    -->
+
+    <repositories>
+        <repository>
+            <id>github</id>
+            <name>GitHub timothystone Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/timothystone/jax-ws-parent</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+    <!-- <pluginRepositories></pluginRepositories>
+    -->
+
+    <!-- <build></build>
+    -->
+
+    <!-- <reporting></reporting>
+    -->
+
+    <!-- <profiles></profiles>
+    -->
+
 </project>
